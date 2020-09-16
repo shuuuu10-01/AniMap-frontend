@@ -1,14 +1,14 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import TopPage from '../views/TopPage.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    name: 'TopPage',
+    component: TopPage
   },
   {
     path: '/about',
@@ -26,11 +26,6 @@ const routes = [
     component: () => import('../views/Find.vue')
   },
   {
-    path: '/toppage',
-    name: 'TopPage',
-    component: () => import('../views/TopPage.vue')
-  },
-  {
     path: '/weather',
     name: 'Weather',
     component: () => import('../views/Weather.vue')
@@ -39,7 +34,7 @@ const routes = [
     path: '/arcamera',
     name: 'ARCamera',
     component: () => import('../views/ARCamera.vue')
-  },
+  }
 ]
 
 const router = new VueRouter({

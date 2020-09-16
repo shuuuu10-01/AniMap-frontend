@@ -44,7 +44,7 @@ export default {
     return {
       drawer: null,
       ani_lists: [
-        { name: 'Topページ', icon: 'mdi-view-dashboard', link: '/toppage' },
+        { name: 'Topページ', icon: 'mdi-view-dashboard', link: '/' },
         { name: '近くの動物たち', icon: 'mdi-vuetify', link: '/nearanimal' },
         { name: '発見！', icon: 'mdi-cogs', link: '/find' },
         { name: '天気', icon: 'mdi-palette', link: '/weather' },

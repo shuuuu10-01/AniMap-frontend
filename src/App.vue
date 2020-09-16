@@ -1,36 +1,37 @@
 <template>
   <v-app>
-    <div id="Leftmenu">
-      <v-navigation-drawer app v-model="drawer" clipped>
-        <v-container>
-          <v-list-item>
-            <v-list-item-content>
-              <v-list-item-title>
+    <!---->
+    <v-navigation-drawer app v-model="drawer" clipped>
+      <v-container>
+        <v-list-item>
+          <v-list-item-content>
+            <v-list-item-title>
               AniMap Menu
-              </v-list-item-title>
+            </v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-divider></v-divider>
+        <v-list dense nav>
+          <v-list-item v-for="ani_list in ani_lists"  :key="ani_list.name" :to="ani_list.link">
+            <v-list-item-icon>
+              <v-icon>{{ ani_list.icon }}</v-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title>{{ ani_list.name }}</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
-          <v-divider></v-divider>
-          <v-list dense nav>
-            <v-list-item v-for="ani_list in ani_lists"  :key="ani_list.name" :to="ani_list.link">
-              <v-list-item-icon>
-                <v-icon>{{ ani_list.icon }}</v-icon>
-              </v-list-item-icon>
-              <v-list-item-content>
-                <v-list-item-title>{{ ani_list.name }}</v-list-item-title>
-              </v-list-item-content>
-            </v-list-item>
-          </v-list>
-        </v-container>
-      </v-navigation-drawer>
-      <v-app-bar color="primary" dark app>
-        <v-app-bar-nav-icon @click="drawer=!drawer"></v-app-bar-nav-icon>
-        <v-toolbar-title class="title">AniMap</v-toolbar-title>
-      </v-app-bar>
-  </div>
+        </v-list>
+      </v-container>
+    </v-navigation-drawer>
+    <v-app-bar color="primary" dark app>
+      <v-app-bar-nav-icon @click="drawer=!drawer"></v-app-bar-nav-icon>
+      <v-toolbar-title class="title">AniMap</v-toolbar-title>
+    </v-app-bar>
+    <!---->
     <v-main>
       <router-view />
     </v-main>
+    <!---->
     <v-footer color="primary" dark app>
       AniMap
     </v-footer>

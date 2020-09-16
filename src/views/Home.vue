@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1>スタートページ</h1>
+    <h1>このページは使わないよ</h1>
   </div>
 </template>
 

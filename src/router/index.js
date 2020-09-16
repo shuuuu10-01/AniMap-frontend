@@ -37,7 +37,12 @@ const routes = [
     path: '/weather',
     name: 'Weather',
     component: () => import('../views/Weather.vue')
-  }
+  },
+  {
+    path: '/arcamera',
+    name: 'ARCamera',
+    component: () => import('../views/ARCamera.vue')
+  },
 ]
 
 const router = new VueRouter({

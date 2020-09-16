@@ -5,7 +5,7 @@
         <v-container>
           <v-list-item>
             <v-list-item-content>
-              <v-list-item-title class="title">
+              <v-list-item-title>
               AniMap Menu
               </v-list-item-title>
             </v-list-item-content>
@@ -25,7 +25,7 @@
       </v-navigation-drawer>
       <v-app-bar color="primary" dark app>
         <v-app-bar-nav-icon @click="drawer=!drawer"></v-app-bar-nav-icon>
-        <v-toolbar-title>AniMap</v-toolbar-title>
+        <v-toolbar-title class="title">AniMap</v-toolbar-title>
       </v-app-bar>
   </div>
     <v-main>
@@ -53,3 +53,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+  .title{
+    margin: 10px auto;
+  }
+</style>

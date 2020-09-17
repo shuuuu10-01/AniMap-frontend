@@ -1,14 +1,24 @@
 <template>
   <v-row justify="center" class="card mx-auto">
-    <div class="mb-10">
+    <v-img
+      :src="require('../assets/AniMapLogo.png')"
+      class="ma-5"
+      contain
+      height="200"
+      ></v-img>
+      <br>
+    <div class="ma-5">
       <CardHorse />
     </div>
-    <div class="mb-10">
+    <br>
+    <div class="ma-5">
       <CardFox />
     </div>
-    <div class="mb-10">
+    <br>
+    <div class="ma-5">
       <CardKamo />
     </div>
+    <br>
   </v-row>
 
 </template>

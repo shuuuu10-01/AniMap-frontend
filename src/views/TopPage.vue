@@ -1,5 +1,13 @@
 <template>
   <div>
-    <h1>Topページ</h1>
+    <v-row>
+      <v-img
+        :src="require('../assets/AniMapLogo.png')"
+        class="ma-5"
+        contain
+        height="200"
+      ></v-img>
+        <br>
+    </v-row>
   </div>
 </template>

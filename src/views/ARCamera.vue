@@ -3,8 +3,11 @@
     <div class="mb-10">
       <CardHorse />
     </div>
-    <div class="mb-auto">
+    <div class="mb-10">
       <CardFox />
+    </div>
+    <div class="mb-10">
+      <CardKamo />
     </div>
   </v-row>
 
@@ -13,11 +16,13 @@
 <script>
 import CardHorse from '../components/CardHorse'
 import CardFox from '../components/CardFox'
+import CardKamo from '../components/CardKamo'
 
 export default {
   components: {
     CardHorse,
-    CardFox
+    CardFox,
+    CardKamo
   }
 }
 </script>

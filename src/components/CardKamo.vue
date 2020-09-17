@@ -27,7 +27,7 @@
         :loading="loading"
         :disabled="loading"
         @click="loader='loading'"
-        href="https://shuuuu10-01.github.io/AR-santa-try/horse"
+        href="https://shuuuu10-01.github.io/AR-santa-try/kamo"
         target="_blank"
       >
         Share

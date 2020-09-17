@@ -24,6 +24,11 @@
       <v-btn
         color="orange"
         text
+        :loading="loading"
+        :disabled="loading"
+        @click="loader='loading'"
+        href="https://shuuuu10-01.github.io/AR-santa-try/fox"
+        target="_blank"
       >
         Share
       </v-btn>
@@ -31,3 +36,22 @@
   </v-card>
   </div>
 </template>
+
+<script>
+export default {
+  data () {
+    return {
+      loader: null,
+      loading: false
+    }
+  },
+  watch: {
+    loader () {
+      const l = this.loader
+      this[l] = !this[l]
+      setTimeout(() => (this[l] = false), 3000)
+      this.loader = null
+    }
+  }
+}
+</script>

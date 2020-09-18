@@ -42,11 +42,10 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
-
-p {
+  @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+  p {
     font-family: 'Noto Sans JP', sans-serif;
-}
+  }
   .title{
     margin: 10px auto;
   }

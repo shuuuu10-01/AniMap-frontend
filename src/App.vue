@@ -28,7 +28,7 @@
       <v-toolbar-title class="title">AniMap</v-toolbar-title>
     </v-app-bar>
     <!---->
-    <v-main>
+    <v-main class="main">
       <router-view />
     </v-main>
     <!---->
@@ -40,7 +40,7 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       drawer: null,
       ani_lists: [
@@ -56,7 +56,11 @@ export default {
 </script>
 
 <style scoped>
-  .title{
-    margin: 10px auto;
+  .main{
+    background: url("assets/Background2.png");
+    background-size: cover;
+    background-position: center center;
+    width: auto;
+    height: auto;
   }
 </style>

@@ -2,7 +2,7 @@
   <div>
     <v-row>
       <v-img
-        :src="require('../assets/AniMapLogo.png')"
+        :src="require('../assets/AniMapLogo2.png')"
         class="ma-5"
         contain
         height="200"

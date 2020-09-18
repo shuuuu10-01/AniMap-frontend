@@ -13,7 +13,7 @@
     </v-img>
 
     <v-card-text class="text--primary">
-      <div>下のボタンをクリックしてARマーカーを読み込んでみよう</div>
+      <div class="moji1">下のボタンをクリックしてARマーカーを読み込んでみよう</div>
     </v-card-text>
 
     <v-card-actions>
@@ -51,3 +51,11 @@ export default {
   }
 }
 </script>
+
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+  .moji1 {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: black;
+  }
+</style>

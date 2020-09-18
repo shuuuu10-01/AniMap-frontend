@@ -1,42 +1,45 @@
 <template>
   <v-row justify="center" class="card mx-auto">
-    <v-col>
-    <v-img
-      :src="require('../assets/AniMapLogo2.png')"
-      class="ma-5"
-      contain
-      height="200"
-    ></v-img>
-    <p class="moji">召喚の間へようこそ！</p>
-    <p class="submoji">ここでは下のARマーカーを読み取ることによって動物たちと写真を撮ろう！！</p>
-
-    <div class="ma-5">
-      <CardHorse />
-    </div>
-    <br>
-    <div class="ma-5">
-      <CardFox />
-    </div>
-    <br>
-    <div class="ma-5">
-      <CardKamo />
-    </div>
-    <br>
-  </v-col>
+    <v-col justify="center">
+      <v-img
+        :src="require('../assets/AniMapLogo2.png')"
+        class="ma-5"
+        contain
+        height="200"
+      ></v-img>
+      <p class="moji">召喚の間へようこそ！</p>
+      <p class="submoji">ここでは下のARマーカーを読み取ることによって動物たちと写真を撮ろう！！</p>
+      <div class="ma-5 armarker">
+        <ARMarker />
+      </div>
+      <div class="ma-5">
+        <CardHorse />
+      </div>
+      <br>
+      <div class="ma-5">
+        <CardFox />
+      </div>
+      <br>
+      <div class="ma-5">
+        <CardKamo />
+      </div>
+      <br>
+    </v-col>
   </v-row>
-
 </template>
 
 <script>
 import CardHorse from '../components/CardHorse'
 import CardFox from '../components/CardFox'
 import CardKamo from '../components/CardKamo'
+import ARMarker from '../components/ARMarker'
 
 export default {
   components: {
     CardHorse,
     CardFox,
-    CardKamo
+    CardKamo,
+    ARMarker
   }
 }
 </script>
@@ -60,5 +63,9 @@ export default {
   color: black;
   text-align: center;
   font-size: 25px;
+}
+.armarker {
+  text-align: center;
+  margin:0 auto;
 }
 </style>
